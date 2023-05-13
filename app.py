@@ -129,6 +129,10 @@ app = Flask(__name__)
 
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
+@app.route('/')
+def home():
+    return 'Hello, World!'
+
 @app.route('/api/ask', methods=['POST'])
 def ask():
     message = request.json['message']
