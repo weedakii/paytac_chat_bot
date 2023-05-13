@@ -1,4 +1,5 @@
+nltk
+numpy
 tensorflow
 tflearn
-nltk
 flask
